@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@theme {
+  --color-primary: oklch(84.789% 0.17355 86.061);
+  --color-primary-50: oklch(94.976% 0.07153 92.671);
+  --color-primary-100: oklch(93.596% 0.09126 92.686);
+  --color-primary-200: oklch(91.199% 0.12647 92.847);
+  --color-primary-300: oklch(88.811% 0.15244 91.498);
+  --color-primary-400: oklch(86.806% 0.16902 89.753);
+  --color-primary-500: oklch(84.789% 0.17355 86.061);
+  --color-primary-600: oklch(70.449% 0.14416 86.378);
+  --color-primary-700: oklch(55.333% 0.11318 86.918);
+  --color-primary-800: oklch(39.087% 0.07989 88.046);
+  --color-primary-900: oklch(20.853% 0.04265 91.861);
+  --color-primary-950: oklch(8.5603% 0.01756 94.54);
+  --color-secondary: oklch(49.577% 0.28384 263.94);
+  --color-secondary-50: oklch(83.966% 0.07922 272);
+  --color-secondary-100: oklch(79.522% 0.10282 270.53);
+  --color-secondary-200: oklch(70.7% 0.1522 269.01);
+  --color-secondary-300: oklch(62.258% 0.20248 267.56);
+  --color-secondary-400: oklch(55.012% 0.2481 265.28);
+  --color-secondary-500: oklch(49.577% 0.28384 263.94);
+  --color-secondary-600: oklch(41.467% 0.23331 263.85);
+  --color-secondary-700: oklch(32.96% 0.17971 263.66);
+  --color-secondary-800: oklch(23.731% 0.12258 263.23);
+  --color-secondary-900: oklch(13.836% 0.0555 259.68);
+  --color-secondary-950: oklch(6.5534% 0.0175 247.65);
+  --color-tertiary: oklch(51.304% 0.17058 31.105);
+  --color-tertiary-50: oklch(79.201% 0.08691 27.115);
+  --color-tertiary-100: oklch(75.832% 0.10351 28.566);
+  --color-tertiary-200: oklch(69.138% 0.13927 29.167);
+  --color-tertiary-300: oklch(63.34% 0.17239 30.168);
+  --color-tertiary-400: oklch(58.342% 0.19697 31.02);
+  --color-tertiary-500: oklch(51.304% 0.17058 31.105);
+  --color-tertiary-600: oklch(41.182% 0.13301 30.951);
+  --color-tertiary-700: oklch(30.43% 0.09225 30.541);
+  --color-tertiary-800: oklch(18.736% 0.04574 31.864);
+  --color-tertiary-900: oklch(0% 0 none);
+  --color-tertiary-950: oklch(0% 0 none);
+}
+@plugin "daisyui";
+@import 'tailwindcss';
+
+.herosection {
+  background-image: radial-gradient(
+      circle,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.35) 70%
+    ),
+    url(https://images.pexels.com/photos/11297769/pexels-photo-11297769.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+}
+
+
+.summersales{
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100%25' width='100%25'%3E%3Cdefs%3E%3Cpattern id='doodad' width='61' height='61' viewBox='0 0 40 40' patternUnits='userSpaceOnUse' patternTransform=''%3E%3Crect width='100%25' height='100%25' fill='rgba(255, 195, 0,1)'/%3E%3Cpath d='M0 40a 7-7 0 0 0 7-7a 13-13 0 0 1 13-13a 7-7 0 0 0 7-7a 13-13 0 0 1 13-13v6a-7 7 0 0 0-7 7a-13 13 0 0 1-13 13a-7 7 0 0 0-7 7a-13 13 0 0 1-13 13zM0 0a 7-7 0 0 0 7-7h6a-13 13 0 0 1-13 13z' fill='rgba(0, 60, 255,1)'/%3E%3Cpath d='M0 0a 7-7 0 0 0 7-7a 13-13 0 0 1 13-13a 7-7 0 0 0 7-7a 13-13 0 0 1 13-13v6a-7 7 0 0 0-7 7a-13 13 0 0 1-13 13a-7 7 0 0 0-7 7a-13 13 0 0 1-13 13zM0 40a 7-7 0 0 0 7-7a 13-13 0 0 1 13-13a 7-7 0 0 0 7-7a 13-13 0 0 1 13-13v6a-7 7 0 0 0-7 7a-13 13 0 0 1-13 13a-7 7 0 0 0-7 7a-13 13 0 0 1-13 13z ' fill='rgba(0, 60, 255,1)'/%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23doodad)' height='200%25' width='200%25'/%3E%3C/svg%3E ")
+}
