@@ -64,9 +64,9 @@ export default function Featured() {
         Featured Categories :
       </h2>
 
-      <div className="flex flex-col uppercase md:flex-row justify-between space-x-4 space-y-4 px-8 xl:px-16 2xl:px-32 2xl:space-x-16">
+      <div className="flex flex-col uppercase md:flex-row justify-between space-x-4 space-y-4 px-8 ">
         <div className="bg-secondary-50  rounded-3xl space-y-4 py-4 w-full h-full">
-          <h2 className="text-center underline text-xl">smartphones</h2>
+          <h2 className="text-center  text-xl">smartphones</h2>
           <div className="py-2 px-12">
             <div className="grid grid-cols-2 gap-x-16 gap-y-8 ">
               {smartphones.map((item) => {
@@ -86,7 +86,7 @@ export default function Featured() {
         </div>
 
         <div className="bg-secondary-50  rounded-3xl space-y-4 py-4 w-full h-full">
-          <h2 className="text-center underline text-xl">accessories</h2>
+          <h2 className="text-center  text-xl">accessories</h2>
           <div className="py-2 px-12">
             <div className="grid grid-cols-2 gap-x-16 gap-y-8">
               {accessories.map((item) => {
@@ -106,7 +106,7 @@ export default function Featured() {
         </div>
 
         <div className="bg-secondary-50  rounded-3xl space-y-4 py-4 w-full h-full">
-          <h2 className="text-center underline text-xl">smartgadgets</h2>
+          <h2 className="text-center  text-xl">smartgadgets</h2>
           <div className="py-2 px-12 ">
             <div className="grid grid-cols-2 gap-x-16 gap-y-8">
               {smartgadgets.map((item) => {

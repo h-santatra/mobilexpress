@@ -18,8 +18,7 @@ export default function Dealsitem({
         </div>
         <div className=" flex">
           {itemStar}
-          <span>{itemRating}</span>
-          <span>{ratingComment}</span>
+          <span>{`${itemRating} ${ratingComment}`}</span>
           <span>
             ,{" "}
             <a href="" className="underline cursor-pointer">

@@ -3,63 +3,63 @@ import { CircleDollarSign } from "lucide-react";
 import { ShieldCheck } from "lucide-react";
 import { Headset } from "lucide-react";
 import { Truck } from "lucide-react";
+
 export default function Whywithus() {
+  const size = 40;
+  const content = [
+    {
+      icon: <Package2 size={size} />,
+      title: "Authentic Products",
+      sub: "100% genuine, brand certified devices",
+    },
+    /*
+    {
+      icon: <CircleDollarSign size={size} />,
+      title: "best prices",
+      sub: "aily deals, seasonal discount and bundle offers",
+    },*/
+    {
+      icon: <ShieldCheck size={size} />,
+      title: "secure checkout",
+      sub: "multiple payment options with top-tier encryption",
+    },
+    {
+      icon: <Truck size={size} />,
+      title: "fast delivery",
+      sub: "natinwide shipping with real-time tracking",
+    },
+    {
+      icon: <Headset size={size} />,
+      title: "after sales support",
+      sub: "hassle-free returns, warranty coverage and live chat assistance",
+    },
+  ];
   return (
     <div>
-      <div className="flex flex-col gap-y-4 uppercase">
-        <div className="flex flex-col">
-          <div>
-            <i>
-              <Package2 />
-            </i>
+      <div className="px-4">
+        <div className="flex flex-row-reverse items-start ">
+          <div className="hidden md:block w-4/6">
+            <img src="/purchaseimage.png" alt="" className="" />
           </div>
-          <div className="border">
-            <h2 className="text-4xl">Authentic Products</h2>
-            <h4 className="text-lg">100% genuine, brand certified devices</h4>
-          </div>
-        </div>
-        <div>
-          <div>
-            <i>
-              <CircleDollarSign />
-            </i>
-          </div>
-          <div>
-            <h2></h2>
-            <h4></h4>
-          </div>
-        </div>
-        <div>
-          <div>
-            <i>
-              <ShieldCheck />
-            </i>
-          </div>
-          <div>
-            <h2></h2>
-            <h4></h4>
-          </div>
-        </div>
-        <div>
-          <div>
-            <i>
-              <Truck />
-            </i>
-          </div>
-          <div>
-            <h2></h2>
-            <h4></h4>
-          </div>
-        </div>
-        <div>
-          <div>
-            <i>
-              <Headset />
-            </i>
-          </div>
-          <div>
-            <h2></h2>
-            <h4></h4>
+          <div className="mt-4">
+            <h2 className="text-3xl pb-8 uppercase underline">
+              Why shop with Mobilexpress ?
+            </h2>
+            <div className=" grid grid-cols-2 gap-4 uppercase md:gap-4">
+              {content.map((item) => {
+                return (
+                  <div className="space-y-2 border px-4 py-6 rounded-md  bg-neutral-50 overflow-hidden hover:bg-neutral-200 transition-colors duration-400 cursor-pointer">
+                    <div>
+                      <i>{item.icon}</i>
+                    </div>
+                    <div className="space-y-0.5">
+                      <h2 className="text-lg md">{item.title}</h2>
+                      <h4 className="text-xs">{item.sub}</h4>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>

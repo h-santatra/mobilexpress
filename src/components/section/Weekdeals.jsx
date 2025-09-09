@@ -9,7 +9,7 @@ export default function Weekdeals() {
       deal: "Now 45% Off + Free Wireless Charge",
       rating: "(4.5 rating out of 5) ",
       star: 4.5,
-      comments: "26 869 reviews",
+      comments: " 26 869 reviews",
     },
 
     {
@@ -18,7 +18,7 @@ export default function Weekdeals() {
       deal: "Bundle Offer with iPhone 15",
       rating: "(4.85 rating out of 5) ",
       star: 4.85,
-      comments: "35 568 reviews",
+      comments: " 35 568 reviews",
     },
 
     {
@@ -27,23 +27,28 @@ export default function Weekdeals() {
       deal: "Buy 1 Get 1 50% OfF",
       rating: "(4.25 rating out of 5) ",
       star: 4.25,
-      comments: "15 634 reviews",
+      comments: " 15 634 reviews",
     },
   ];
   return (
-    <div className="flex flex-col gap-2">
-      {dealsItem.map((item) => {
-        return (
-          <Dealsitem
-            productImage={item.image}
-            productTitle={item.name}
-            dealInfo={item.deal}
-            itemRating={item.rating}
-            ratingComment={item.comments}
-            itemStar={<RatingStar rating={item.star} />}
-          />
-        );
-      })}
+    <div className="px-4">
+      <h2 className="text-3xl py-4 uppercase underline">
+        top deals of the week
+      </h2>
+      <div className="flex flex-col gap-2 ">
+        {dealsItem.map((item) => {
+          return (
+            <Dealsitem
+              productImage={item.image}
+              productTitle={item.name}
+              dealInfo={item.deal}
+              itemRating={item.rating}
+              ratingComment={item.comments}
+              itemStar={<RatingStar rating={item.star} />}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 }
