@@ -1,13 +1,13 @@
 export default function Footer() {
   return (
     <div className="px-4 uppercase bg-neutral-900 text-neutral-200 pt-8 pb-2">
-      <div className="flex space-y-8 space-x-8">
-        <div className="space-y-4 w-1/2 ">
+      <div className="flex flex-col md:flex-row space-y-8 space-x-8">
+        <div className="space-y-4 lg:w-1/2 ">
           <h3 className="text-sm">stay connected</h3>
-          <div className=" flex flex-col text-[10px] space-y-4">
+          <div className=" flex md:flex-col text-[10px] space-y-4 space-x-8 ">
             <div className="space-y-2">
               <h4>subscribe to our newsletter for exclusive deals</h4>
-              <div className="flex space-x-2 mr-32">
+              <div className="flex space-x-2 lg:mr-32">
                 <input
                   type="text"
                   placeholder="your email"
@@ -19,9 +19,9 @@ export default function Footer() {
               </div>
             </div>
             <div className="">
-              <h4>follow us on social media :</h4>{" "}
+              <h4>follow us on social media :</h4>{' '}
               <h6>
-                <a href=""> instagram</a> | <a href="">facebook</a> |{" "}
+                <a href=""> instagram</a> | <a href="">facebook</a> |{' '}
                 <a href="">twitter</a> | <a href="">tiktok</a>
               </h6>
             </div>
@@ -54,7 +54,7 @@ export default function Footer() {
             <div className="text-[10px] space-y-0.5">
               <h5>customer support : +261 34 01 002 03</h5>
               <h5>
-                email :{" "}
+                email :{' '}
                 <a href="mailto:support@mobilexpress.com" className="underline">
                   support@mobilexpress.com
                 </a>

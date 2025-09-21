@@ -1,3 +1,5 @@
+import { CircleArrowRight } from 'lucide-react';
+
 export default function Herosection() {
   return (
     <div>
@@ -13,8 +15,8 @@ export default function Herosection() {
             </h2>
           </div>
           <a href="">
-            <button className="cursor-pointer btn btn-warning btn-lg text-black px-8 py-4 rounded-2xl uppercase ">
-              Shop Now
+            <button className="cursor-pointer btn btn-warning btn-lg text-black px-6 py-4 rounded-2xl uppercase space-x-2">
+              <span>Shop Now</span> <CircleArrowRight />
             </button>
           </a>
         </div>

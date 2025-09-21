@@ -5,6 +5,28 @@ import { Smartphone } from "lucide-react";
 import { Menu } from "lucide-react";
 
 export default function TopNavbar() {
+  const navBar = [
+    {
+      title: 'HOMEpage',
+      link: '',
+    },
+    {
+      title: 'shop',
+      link: '',
+    },
+    {
+      title: 'order',
+      link: '',
+    },
+    {
+      title: 'faq',
+      link: '',
+    },
+    {
+      title: 'about us',
+      link: '',
+    },
+  ];
   return (
     <div className="flex  justify-between items-center">
       <div className="flex items-center">
@@ -23,9 +45,9 @@ export default function TopNavbar() {
         <input
           type="text"
           placeholder="search an item here..."
-          className=" bg-gray-300 border-1  rounded-xl px-4 py-1.5  md:w-full"
+          className=" bg-gray-300 border-1  rounded-xl px-4 py-1.5  w-full"
         />
-        <button className="cursor-pointer">
+        <button className=" hidden md:block cursor-pointer">
           <Search className="size-8" />
         </button>
       </div>
