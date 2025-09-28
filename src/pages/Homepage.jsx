@@ -15,7 +15,7 @@ export default function Homepage() {
       <div>
         <Featured />
       </div>
-      <Summersales />
+      {/* <Summersales /> */}
       <Weekdeals />
       <Whywithus />
       <Highlights />

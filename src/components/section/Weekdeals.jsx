@@ -32,13 +32,14 @@ export default function Weekdeals() {
   ];
   return (
     <div className="px-4">
-      <h2 className="text-3xl py-4 uppercase underline">
+      <h2 className="text-2xl md:text-3xl py-4 uppercase underline">
         top deals of the week
       </h2>
-      <div className="flex flex-col gap-2 ">
+      <div className="flex flex-col gap-2 space-y-8">
         {dealsItem.map((item) => {
           return (
             <Dealsitem
+              key={item.name}
               productImage={item.image}
               productTitle={item.name}
               dealInfo={item.deal}

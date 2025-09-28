@@ -17,13 +17,13 @@ export default function Highlights() {
   ];
   return (
     <div className="uppercase px-4">
-      <h2 className="text-3xl py-4 underline">mobile Highlights</h2>
+      <h2 className="text-2xl md:text-3xl py-4 underline">mobile Highlights</h2>
       <div>
         <div>
           <div className="flex flex-col space-y-2">
             {highlightsContent.map((item) => {
               return (
-                <a href="" className="cursor-pointer">
+                <a href="" className="cursor-pointer" key={item.title}>
                   <div className="flex items-center justify-between group">
                     <div>
                       <h4 className="group-hover:underline text-lg">

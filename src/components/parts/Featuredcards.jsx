@@ -8,10 +8,10 @@ export default function Featuredcards({ productIcon, productTitle }) {
         <img
           src={productIcon}
           alt={productTitle}
-          className="size-40 md:size-25 rounded-lg scale-95 group-hover:scale-100 group-hover:brightness-70 transition-all duration-500 ease-in-out "
+          className="size-25 md:size-20 rounded-lg scale-95 group-hover:scale-100 group-hover:brightness-70 transition-all duration-500 ease-in-out "
         />
       </div>
-      <h6 className="uppercase md:text-sm lg:text-md group-hover:underline">
+      <h6 className="uppercase text-sm group-hover:underline">
         {productTitle}
       </h6>
     </a>

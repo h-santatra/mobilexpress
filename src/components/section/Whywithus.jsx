@@ -1,16 +1,16 @@
-import { Package2 } from 'lucide-react';
-import { CircleDollarSign } from 'lucide-react';
-import { ShieldCheck } from 'lucide-react';
-import { Headset } from 'lucide-react';
-import { Truck } from 'lucide-react';
+import { Package2 } from "lucide-react";
+import { CircleDollarSign } from "lucide-react";
+import { ShieldCheck } from "lucide-react";
+import { Headset } from "lucide-react";
+import { Truck } from "lucide-react";
 
 export default function Whywithus() {
   const size = 40;
   const content = [
     {
       icon: <Package2 size={size} />,
-      title: 'Authentic Products',
-      sub: '100% genuine, brand certified devices',
+      title: "Authentic Products",
+      sub: "100% genuine, brand certified devices",
     },
     /*
     {
@@ -20,18 +20,18 @@ export default function Whywithus() {
     },*/
     {
       icon: <ShieldCheck size={size} />,
-      title: 'secure checkout',
-      sub: 'multiple payment options with top-tier encryption',
+      title: "secure checkout",
+      sub: "multiple payment options with top-tier encryption",
     },
     {
       icon: <Truck size={size} />,
-      title: 'fast delivery',
-      sub: 'natinwide shipping with real-time tracking',
+      title: "fast delivery",
+      sub: "natinwide shipping with real-time tracking",
     },
     {
       icon: <Headset size={size} />,
-      title: 'after sales support',
-      sub: 'hassle-free returns, warranty coverage and live chat assistance',
+      title: "after sales support",
+      sub: "hassle-free returns, warranty coverage and live chat assistance",
     },
   ];
   return (
@@ -39,13 +39,16 @@ export default function Whywithus() {
       <div className="px-4">
         <div className="flex items-center ">
           <div className="mt-4">
-            <h2 className="text-3xl pb-8 uppercase underline">
+            <h2 className="text-2xl md:text-3xl pb-8 uppercase underline">
               Why shop with Mobilexpress ?
             </h2>
             <div className=" grid xs:grid-row sm:grid-cols-2 gap-4 uppercase md:gap-4">
               {content.map((item) => {
                 return (
-                  <div className="space-y-2 border px-4 py-6 rounded-md  bg-neutral-100  overflow-hidden">
+                  <div
+                    className="space-y-2 border px-4 py-6 rounded-md  bg-neutral-100  overflow-hidden"
+                    key={item.title}
+                  >
                     <div>
                       <i>{item.icon}</i>
                     </div>
